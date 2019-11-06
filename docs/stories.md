@@ -120,12 +120,107 @@ Project: (Nickname of project goes here)
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | (Title of user story goes here) |
-| Description | (Description of user store goes here) |
-| Estimate    | (Number of days of work required to implement the US) |
+| Title       | Create character name |
+| Description | As a user, I want to be able to give my character a name so I can further personalize the character |
+| Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
-| Status      | (US status) |
+| Status      | not started |
 
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Label character with user’s name |
+| Description | As a user, I want to be able to label my character with my username so I can know which characters are mine. |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select characters’ alignment |
+| Description | As a user, I want to be able to give my character an alignment so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character age |
+| Description | As a user, I want to be able to give my character an age so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Display picture of character |
+| Description | As a user I want to see a picture of my character so I can see the results from the customization done in creation |
+| Estimate    | 1.5 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character height |
+| Description | As a user, I want to be able to give my character a height so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character sex |
+| Description | As a user, I want to be able to give my character a sex so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character hair color |
+| Description | As a user, I want to be able to give my character a hair color so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character personality traits |
+| Description | As a user, I want to be able to give my character personality traits so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character ideals |
+| Description | As a user, I want to be able to give my character ideals so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character Bonds |
+| Description | As a user, I want to be able to give my character bonds so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select character flaws |
+| Description | As a user, I want to be able to give my character flaws so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select characters’ known languages |
+| Description | As a user, I want to be able to give my character a set of languages, so I can further personalize the character |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
 
 ## Leveling up
 
