@@ -8,7 +8,7 @@ Project: (Nickname of project goes here)
 | ----------- | ----- |
 | Title       | Select Character Race |
 | Description | As a user, I want to select a race for my character so it can have a specific skill set |
-| Estimate    | (5 days |
+| Estimate    | 5 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
@@ -22,96 +22,17 @@ Project: (Nickname of project goes here)
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Create character’s strength  |
+| Title       | Create character’s stats |
 | Description | As a user, I want to customize strength for my new character so I don’t have to calculate it by hand|
-| Estimate    | 2 days |
+| Estimate    | 5 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create character dexterity |
-| Description | As a user, I want to customize dexterity for my new character so I don’t have to calculate it by hand |
-| Estimate    |  2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Create character constitution |
-| Description | As a user, I want to customize constitution for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create character intelligence |
-| Description | As a user, I want to customize intelligence for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create character wisdom |
-| Description | As a user, I want to customize wisdom for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create character charisma  |
-| Description | As a user, I want to customize charisma for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create characters’ proficiency bonus |
-| Description | As a user, I want to customize proficiency bonus for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create characters’ passive perception |
-| Description | As a user, I want to customize passive perception for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create characters’ armor class |
-| Description |  As a user, I want to customize armor class for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create characters’ initiative |
-| Description | As a user, I want to customize initiative for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create characters’ speed |
-| Description | As a user, I want to customize speed for my new character so I don’t have to calculate it by hand |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Create characters’ hit points |
-| Description | As a user, I want to customize hit points for my new character so I don’t have to calculate it by hand |
+| Title       | Select characters’ proficiency bonuses |
+| Description | As a user, I want to select the attributes I want my character to be proficient in, so I can reference it during a session. |
 | Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
@@ -120,32 +41,24 @@ Project: (Nickname of project goes here)
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Create character name |
-| Description | As a user, I want to be able to give my character a name so I can further personalize the character |
+| Title       | Create character description  |
+| Description | As a user, I want to be able to give my character a name, sex, age, height, and hair color, so I can further personalize the character |
 | Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Label character with user’s name |
-| Description | As a user, I want to be able to label my character with my username so I can know which characters are mine. |
+| Title       | Select characters’ alignment & known languages |
+| Description | As a user, I want to be able to give my character an alignment & known languages, so I can further personalize the character |
 | Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Select characters’ alignment |
-| Description | As a user, I want to be able to give my character an alignment so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character age |
-| Description | As a user, I want to be able to give my character an age so I can further personalize the character |
+| Title       | Add character personality traits, Ideals, bonds, & flaws |
+| Description | As a user, I want to be able to give my character personality traits, ideals, bonds, & flaws so I can further personalize the character. |
 | Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
@@ -158,102 +71,74 @@ Project: (Nickname of project goes here)
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character height |
-| Description | As a user, I want to be able to give my character a height so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character sex |
-| Description | As a user, I want to be able to give my character a sex so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character hair color |
-| Description | As a user, I want to be able to give my character a hair color so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character personality traits |
-| Description | As a user, I want to be able to give my character personality traits so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character ideals |
-| Description | As a user, I want to be able to give my character ideals so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character Bonds |
-| Description | As a user, I want to be able to give my character bonds so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select character flaws |
-| Description | As a user, I want to be able to give my character flaws so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       | Select characters’ known languages |
-| Description | As a user, I want to be able to give my character a set of languages, so I can further personalize the character |
-| Estimate    | 2 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
 ## Leveling up
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
 | Title       | Select existing character |
 | Description | As a user, I want to be able to select an existing character so I can continue the game with my previous creation. |
-| Estimate    | 5 days |
-| Priority    | (US priority number goes here) |
-| Status      | not started |
-
-| ID          | (ID of user story goes here) |
-| ----------- | ----- |
-| Title       |  Add hitpoints to character |
-| Description | As a user, I want to be able to select an existing character so I can continue the game with my previous creation. |
 | Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Add misc level up stats to character |
-| Description | As a user, I want to be able to have any other stats that need to be increased calculated automatically.  |
+| Title       |  Increase stats of character |
+| Description | As a user, I want to be able to have the app increase the stats of my choice for leveling up. |
 | Estimate    | 2 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
 
-## Weapons
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Add feats to character |
+| Description | As a user, I want to be able to select new feats to add to my character at level 1, 6, 10, & 14.  |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
 
 | ID          | (ID of user story goes here) |
 | ----------- | ----- |
-| Title       | Select attack attribute |
-| Description | As a user, I want to select a weapon or spellcast so I can let my character use it. |
-| Estimate    | 5 days |
+| Title       | Add spells to character |
+| Description | As a user, if my character is a spell caster, I want to be able to select new spells to add to my spell book.  |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+## Items
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Add Items |
+| Description | As a user, I want to add a weapon or an item so I can let my character use it in game. |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Equip Items |
+| Description | As a user, I want to equip a weapon, armor, or an item so I can let my character use it in game. |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+## Spells
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Select Spells |
+| Description | As a user, I want to select a spell to add to my spellbook, so my character can use them in game. |
+| Estimate    | 2 days |
+| Priority    | (US priority number goes here) |
+| Status      | not started |
+
+## User
+
+| ID          | (ID of user story goes here) |
+| ----------- | ----- |
+| Title       | Create Login |
+| Description | As a user, I want to be able to login to have my own set of characters |
+| Estimate    | 3 days |
 | Priority    | (US priority number goes here) |
 | Status      | not started |
