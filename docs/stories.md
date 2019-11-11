@@ -1,6 +1,6 @@
 # User Stories
 
-Project: (Nickname of project goes here)
+Project: DnD Character Creation
 
 ## Character Stats
 
@@ -127,8 +127,8 @@ Project: (Nickname of project goes here)
 
 | ID          | 15 |
 | ----------- | ----- |
-| Title       | Select Spells |
-| Description | As a user, I want to select a spell to add to my spellbook, so my character can use them in game. |
+| Title       | Select Spells during level up|
+| Description | As a user, I want to select a spell to add to my spellbook during level up, so my character can use them in game. |
 | Estimate    | 2 days |
 | Priority    | 35 |
 | Status      | not started |
