@@ -92,7 +92,7 @@ Project: DnD Character Creation
 | ID          | 11 |
 | ----------- | ----- |
 | Title       | Add feats to character |
-| Description | As a user, I want to be able to select new feats to add to my character at level 1, 6, 10, & 14.  |
+| Description | As a user, I want to be able to select new feats to add to my character at level 1, 6, 10, & 14 So I can further enhance the character.  |
 | Estimate    | 2 days |
 | Priority    | 30 |
 | Status      | not started |
