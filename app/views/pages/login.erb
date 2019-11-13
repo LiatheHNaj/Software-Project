@@ -1,0 +1,32 @@
+<h1 class="text-center">Welcome to DnD Login!</h1>
+
+
+<body class="container center">
+<%= form_tag do%>
+    <div class="form-group row container">
+        <div class="col-lg-6">
+        <div>
+            <%= label_tag "Username" %>
+            <%= text_field_tag "Username", nil %>
+        </div>
+        <div>   
+            <%= label_tag "Password" %>
+            <%= password_field_tag "Password", nil %>
+            <%= submit_tag("Login") %>
+        </div>
+        </div>
+ 
+        <div class="col-lg-6">
+        <div>
+            <%= label_tag "Create username" %>
+            <%= text_field_tag "create_username", nil %>
+        </div>
+        <div>   
+            <%= label_tag "Create password" %>
+            <%= text_field_tag "create_password", nil %>
+            <%= submit_tag("Sign up") %>
+        </div>
+        </div>
+    </div>
+<% end %>
+</body>

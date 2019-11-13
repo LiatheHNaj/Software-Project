@@ -1,0 +1,16 @@
+<h1>Welcome to DnD Login!</h1>
+
+
+
+<%= form_tag do %>
+    <div>
+        <%= label_tag "Username" %>
+        <%= text_field_tag "Username", nil %>
+    </div>
+    <div>   
+        <%= label_tag "Password" %>
+        <%= text_field_tag "Password", nil %>
+        <%= submit_tag("Login") %>
+    </div>
+<% end %>
+<%= button_to "Sign up" %>
