@@ -6,4 +6,10 @@ class PagesController < ApplicationController
         end
       end
 
+      def menu
+        respond_to do |format|
+          format.html { render :menu }
+        end
+      end
+
 end
