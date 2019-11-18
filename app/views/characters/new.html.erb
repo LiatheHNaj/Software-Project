@@ -1,0 +1,15 @@
+<h1>Create Your New DnD Charater</h1>
+
+<h2> Select Your Stats </h2>
+
+
+<%= form_with url: characters_path, local: true, method: :post do %>
+
+<div>
+   <%= label_tag "class_type" %>
+   <%= select_tag "class_type", options_for_select([ "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" ]), prompt: 'Choose one...' %>
+ </div>
+
+ <%= submit_tag "Submit" %>
+
+<% end %>
