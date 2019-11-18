@@ -10,9 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_11_18_042531) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "stats", force: :cascade do |t|
+    t.integer "level"
+    t.integer "strength"
+    t.integer "dexterity"
+    t.integer "constitution"
+    t.integer "intelligence"
+    t.integer "wisdom"
+    t.integer "charisma"
+    t.integer "initiative_bonus"
+    t.integer "ability_modifier"
+    t.integer "proficiency_bonus"
+    t.integer "hitpoints"
+    t.integer "speed"
+    t.integer "armor_class"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
