@@ -1,0 +1,42 @@
+<div class="text-center">
+<%= image_tag "dnd.png", height: 300%>
+</div><br>
+
+<h1 class="text-center">Welcome to DnD Login!</h1><br>
+
+
+<body class="container">
+<%= form_tag do%>
+    <div class="form-group row">
+        <div class="col-lg-6">
+        <div>
+            <%= label_tag "Username" %>
+            <%= text_field_tag "Username", nil %>
+        </div><br>
+        <div>
+            <%= label_tag "Password" %>
+            <%= password_field_tag "Password", nil %>
+            <%= link_to menu_path do %>
+            <%= submit_tag("Login") %>
+            <% end %>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div>
+            <%= label_tag "Create username" %>
+            <%= text_field_tag "create_username", nil %>
+        </div><br>
+        <div>
+            <%= label_tag "Create password" %>
+            <%= password_field_tag "create_password", nil %>
+        </div><br>
+        <div>
+            <%= label_tag "Verify password" %>
+            <%= password_field_tag "verify_password", nil %>
+            <%= submit_tag("Sign up") %>
+        </div><br>
+        </div>
+    </div>
+<% end %>
+</body>

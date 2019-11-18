@@ -1,0 +1,24 @@
+<h1 class="text-center">Menu</h1>
+
+
+<body class="container" style="border">
+    <div class="row text-center">
+        <div class="col-lg-6 border">
+        <%= link_to login_path do %>
+        <%= image_tag "existing_characters.png", height: 300%><br> 
+        <%= label_tag "Existing" %>
+        <% end %>
+        </div>
+
+        <div class="col-lg-6 border">
+        <%= link_to login_path do %>
+        <%= image_tag "new_character.png", height: 300 %><br>
+        <%= label_tag "Create" %>
+        <% end %>
+        </div>
+    </div>
+</body>
+
+<%= link_to login_path do %>
+<%= submit_tag("Log out") %>
+<% end %>
