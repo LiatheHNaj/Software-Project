@@ -1,3 +1,18 @@
+<ul>
+  <% if user_signed_in? %>
+  <br><p>
+  <%= link_to "Hi, #{current_user.email}", edit_user_registration_path, :class => "btn btn-info" %>
+</p>
+  <% else %>
+  <li>
+  <%= link_to 'Sign In', new_user_session_path %>
+</li>
+<li>
+  <%= link_to 'Sign Up', new_user_registration_path %>
+</li>
+  <% end %>
+</ul>
+
 <h1 class="text-center">Menu</h1>
 
 
@@ -5,7 +20,7 @@
     <div class="row text-center">
         <div class="col-lg-6 border">
         <%= link_to login_path do %>
-        <%= image_tag "existing_characters.png", height: 300%><br> 
+        <%= image_tag "existing_characters.png", height: 300%><br>
         <%= label_tag "Existing" %>
         <% end %>
         </div>
@@ -19,6 +34,4 @@
     </div>
 </body>
 
-<%= link_to login_path do %>
-<%= submit_tag("Log out") %>
-<% end %>
+  <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
