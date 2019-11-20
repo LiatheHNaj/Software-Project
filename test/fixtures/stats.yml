@@ -1,0 +1,60 @@
+# == Schema Information
+#
+# Table name: stats
+#
+#  id                 :integer          not null, primary key
+#  level              :integer
+#  strength           :integer
+#  strength_mod       :integer
+#  dexterity          :integer
+#  dexterity_mod      :integer
+#  constitution       :integer
+#  constitution_mod   :integer
+#  intelligence       :integer
+#  intelligence_mod   :integer
+#  wisdom             :integer
+#  wisdom_mod         :integer
+#  charisma           :integer
+#  charisma_mod       :integer
+#  initiative_bonus   :integer
+#  proficiency_bonus  :integer
+#  hitpoints          :integer
+#  speed              :integer
+#  passive_perception :integer
+#  armor_class        :integer
+#  hit_dice           :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#
+
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 1
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 
+  charisma: 1
+  initiative_bonus: 1
+  ability_modifier: 1
+  proficiency_bonus: 1
+  hitpoints: 1
+  speed: 1
+  armor_class: 1
+
+two:
+  level: 1
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 
+  charisma: 1
+  initiative_bonus: 1
+  ability_modifier: 1
+  proficiency_bonus: 1
+  hitpoints: 1
+  speed: 1
+  armor_class: 1
