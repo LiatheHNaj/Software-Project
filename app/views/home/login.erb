@@ -5,38 +5,82 @@
 <h1 class="text-center">Welcome to DnD Login!</h1><br>
 
 
+
+<!-- Default form login -->
 <body class="container">
 <%= form_tag do%>
-    <div class="form-group row">
-        <div class="col-lg-6">
-        <div>
-            <%= label_tag "Username" %>
-            <%= text_field_tag "Username", nil %>
-        </div><br>
-        <div>
-            <%= label_tag "Password" %>
-            <%= password_field_tag "Password", nil %>
-            <%= link_to menu_path do %>
-            <%= submit_tag("Login") %>
-            <% end %>
-        </div>
-        </div>
+<div class="text-center border border-light p-5" action="#!">
 
-        <div class="col-lg-6">
+    <p class="h4 mb-4">Sign in</p>
+
+    <!-- Email -->
+    <%= email_field_tag "create_username", nil, :class => "form-control mb-4",  :placeholder => "E-mail"%>
+
+    <!-- Password -->
+    <%= password_field_tag "create_password", nil, :class => "form-control mb-4",  :placeholder => "Password"%>
+
+    <div class="d-flex justify-content-around">
         <div>
-            <%= label_tag "Create username" %>
-            <%= text_field_tag "create_username", nil %>
-        </div><br>
+            <!-- Remember me -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+            </div>
+        </div>
         <div>
-            <%= label_tag "Create password" %>
-            <%= password_field_tag "create_password", nil %>
-        </div><br>
-        <div>
-            <%= label_tag "Verify password" %>
-            <%= password_field_tag "verify_password", nil %>
-            <%= submit_tag("Sign up") %>
-        </div><br>
+            <!-- Forgot password -->
+            <a href="">Forgot password?</a>
         </div>
     </div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+    <!-- Register -->
+    <p>Not a member?
+        <a data-toggle="modal" data-target="#modalRegisterForm" href="">Register</a>
+    </p>
+
+
+
+</div>
 <% end %>
 </body>
+<!-- Default form login -->
+
+
+
+
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Create Account</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <%= email_field_tag "create_username", nil, :class => "form-control mb-4",  :placeholder => "E-mail", :id => "orangeForm-name"%>
+        </div>
+
+        <div class="md-form mb-4">
+          <%= password_field_tag "create_password", nil, :class => "form-control validate",  :placeholder => "Password", :id => "orangeForm-pass"%>
+        </div>
+
+        <div class="md-form mb-4">
+          <%= password_field_tag "create_password", nil, :class => "form-control validate",  :placeholder => "Verify Password", :id => "orangeForm-pass"%>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
