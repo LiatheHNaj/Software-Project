@@ -1,0 +1,36 @@
+<div class="text-center">
+<%= image_tag "dnd.png", height: 300%>
+</div><br>
+
+<h1 class="text-center">Welcome to DnD Login!</h1><br>
+
+
+
+<!-- Default form login -->
+<body class="container">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="text-center border border-light p-5" action="#!">
+            <div class="field">
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "mb-4",  :placeholder => "E-mail" %>
+            </div>
+
+            <div class="field">
+              <%= f.password_field :password, autocomplete: "current-password", :class => "mb-4",  :placeholder => "Password" %>
+            </div>
+
+            <% if devise_mapping.rememberable? %>
+              <div class="field">
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me %>
+              </div>
+            <% end %>
+
+            <div class="actions">
+              <%= f.submit "Log in", :class => "btn btn-info my-4" %>
+            </div>
+          <% end %>
+          <p>Not a member?
+<%= render "devise/shared/links" %>
+</p>
+</div>
+</body>
