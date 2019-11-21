@@ -1,20 +1,27 @@
 <h1>Create Your New DnD Charater</h1>
 
-<h2> Select Your Stats </h2>
 
 
-<%= form_with url: characters_path, local: true, method: :post do %>
 
-<div>
-   <%= label_tag "race_type" %>
-   <%= select_tag "race_type", options_for_select([ "Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ]), prompt: 'Choose one...' %>
- </div>
+<%= form_with model: character, url: characters_path, local: true, method: :post, scope: :character do |form| %>
+  <% race_options= ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ] %>
+  <% class_options= ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]%>
+  <div>
+    <%= form.label "race_type" %>
+    <%# label_tag "race_type" %>
+    <%= form.select(:race_type, race_options) %>
+    <%# select_tag "race_type", options_for_select([ "Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ]), prompt: 'Choose one...' %>
+  </div>
 
-<div>
-   <%= label_tag "class_type" %>
-   <%= select_tag "class_type", options_for_select([ "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" ]), prompt: 'Choose one...' %>
- </div>
+  <div>
+    <%= form.label "class_options"%>
+   <%# label_tag "class_type" %>
+    <%= form.select(:class_options, class_options) %>
+   <%# select_tag "class_type", options_for_select([ "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" ]), prompt: 'Choose one...' %>
+  </div>
 
- <%= submit_tag "Submit" %>
-
+  <div>
+    <% link_to characters_path %>
+    <%= form.submit "Submit" %>
+  </div>
 <% end %>
