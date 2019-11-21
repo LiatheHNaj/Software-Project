@@ -1,1 +1,9 @@
 <h1>Dungeons & Dragons Character</h1>
+
+
+<table>
+    <%characters.new do |character|%>
+        <tr><% character.race %></tr>
+        <tr><% character.class %></tr>
+    <% end %>
+</table>
