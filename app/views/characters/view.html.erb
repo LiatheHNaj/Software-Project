@@ -1,9 +1,17 @@
 <h1>Dungeons & Dragons Character</h1>
 
-
 <table>
-    <%characters.new do |character|%>
-        <tr><% character.race %></tr>
-        <tr><% character.class %></tr>
-    <% end %>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Race</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% Character.find([:id]) do |character|%>
+            <tr><% character.race %></tr>
+            <tr><% character.character_class %></tr>
+        <% end %>
+    </tbody>
 </table>

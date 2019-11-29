@@ -14,5 +14,5 @@
 #
 
 class Character < ApplicationRecord
-    validates :race, :class, presence: true
+    validates :race, :character_class, presence: true
 end

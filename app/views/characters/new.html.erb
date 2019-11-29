@@ -9,19 +9,18 @@
   <div>
     <%= form.label "race_type" %>
     <%# label_tag "race_type" %>
-    <%= form.select(:race_type, race_options) %>
+    <%= form.select(:race, race_options) %>
     <%# select_tag "race_type", options_for_select([ "Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ]), prompt: 'Choose one...' %>
   </div>
 
   <div>
     <%= form.label "class_options"%>
    <%# label_tag "class_type" %>
-    <%= form.select(:class_options, class_options) %>
+    <%= form.select(:character_class, class_options) %>
    <%# select_tag "class_type", options_for_select([ "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" ]), prompt: 'Choose one...' %>
   </div>
 
   <div>
-    <% link_to characters_path %>
     <%= form.submit "Submit" %>
   </div>
 <% end %>
