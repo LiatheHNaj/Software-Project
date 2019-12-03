@@ -25,6 +25,11 @@
 #  hit_dice           :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
+#  character_id       :integer
+#
+# Indexes
+#
+#  index_stats_on_character_id  (character_id)
 #
 
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

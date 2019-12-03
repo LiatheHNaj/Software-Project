@@ -23,11 +23,12 @@ class CharactersController < ApplicationController
 
   def create
     character = Character.new(params.require(:character).permit(:race, :character_class))  # new object from params
-    #stat = Stat.new
-    #character.stat = Stat
+    stat = Stat.new
+    character.stat = stat
+    current_user.characters << character
     respond_to do |format|  # respond_to block
       format.html {
-        if character.save #&& stat.save   # if character saves
+        if character.save && stat.save   # if character saves
           redirect_to characters_path   # redirect to index
         else                             #else
           flash.now[:error] = "Error: observation could not be saved"

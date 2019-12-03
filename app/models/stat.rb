@@ -25,9 +25,15 @@
 #  hit_dice           :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
+#  character_id       :integer
+#
+# Indexes
+#
+#  index_stats_on_character_id  (character_id)
 #
 
 class Stat < ApplicationRecord
+    belongs_to :character, dependent: :destroy
     before_save :setUpStats
 
     def setUpStats
