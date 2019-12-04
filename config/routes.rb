@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'characters_spell/index'
+  get 'characters_spell/show'
   get 'characters', to: 'characters#index', as: 'characters'
   get 'characters/new', to: 'characters#new', as: 'characters/new'
   post 'characters', to: 'characters#create', as: 'character/create'

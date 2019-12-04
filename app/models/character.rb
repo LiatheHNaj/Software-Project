@@ -21,6 +21,18 @@
 class Character < ApplicationRecord
     has_one :stat
     belongs_to :user
+    before_save :is_spellcaster
 
     validates :race, :character_class, presence: true
+
+    def is_spell
+      temp_variable = false
+      if character_class == "Wizard"
+        temp_variable = true
+      end
+      temp_variable
+    end
+
+
+
 end

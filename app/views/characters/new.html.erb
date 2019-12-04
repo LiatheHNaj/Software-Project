@@ -5,7 +5,8 @@
 
 <%= form_with model: character, url: characters_path, local: true, method: :post, scope: :character do |form| %>
   <% race_options= ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ] %>
-  <% class_options= ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]%>
+  <% class_options= ["Barbarian", "Fighter", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]%>
+  <% spell_options= ["Absorb Elements", "Acid Arrow", "Acid Splash"]%>
   <div>
     <%= form.label "race_type" %>
     <%# label_tag "race_type" %>

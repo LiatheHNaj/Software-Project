@@ -17,13 +17,13 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
 
   create_table "characters", force: :cascade do |t|
     t.string "character_class"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "name"
     t.string "race"
     t.string "ideals"
     t.string "bonds"
     t.string "flaws"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
     t.index ["user_id"], name: "index_characters_on_user_id"
   end
