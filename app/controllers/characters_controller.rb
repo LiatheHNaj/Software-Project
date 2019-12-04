@@ -22,7 +22,7 @@ class CharactersController < ApplicationController
   end
 
   def create
-    character = Character.new(params.require(:character).permit(:race, :character_class))  # new object from params
+    character = Character.new(params.require(:character).permit(:race, :character_class, :name))  # new object from params
     stat = Stat.new
     character.stat = stat
     current_user.characters << character

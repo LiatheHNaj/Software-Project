@@ -22,5 +22,5 @@ class Character < ApplicationRecord
     has_one :stat
     belongs_to :user
 
-    validates :race, :character_class, presence: true
+    validates :name, :race, :character_class, presence: true
 end
