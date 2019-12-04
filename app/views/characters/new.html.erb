@@ -21,6 +21,26 @@
   </div>
 
   <div>
+    <%= form.label "personality_traits"%>
+    <%= form.text_field(:personality_traits) %>    
+  </div>
+  
+  <div>
+    <%= form.label "ideals"%>
+    <%= form.text_field(:ideals) %>    
+  </div>
+
+  <div>
+    <%= form.label "flaws"%>
+    <%= form.text_field(:flaws) %>    
+  </div>  
+  
+  <div>
+    <%= form.label "bonds"%>
+    <%= form.text_field(:bonds) %>    
+  </div>
+
+  <div>
     <%= form.submit "Submit" %>
   </div>
 <% end %>
