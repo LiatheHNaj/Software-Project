@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
     t.string "character_class"
     t.string "name"
     t.string "race"
+    t.string "personality_traits"
     t.string "ideals"
     t.string "bonds"
     t.string "flaws"
