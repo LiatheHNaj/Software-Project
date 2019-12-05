@@ -2,11 +2,13 @@
 #
 # Table name: characters
 #
+
 #  id              :integer          not null, primary key
 #  character_class :string
 #  name            :string
 #  race            :string
 #  ideals          :string
+#  personality_traits :string
 #  bonds           :string
 #  flaws           :string
 #  age             :integer
@@ -16,6 +18,10 @@
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #  user_id         :integer
+
+
+
+
 #
 # Indexes
 #

@@ -1,11 +1,12 @@
 <h1>Character Index</h1>
 <% if user_signed_in? %>
-    <table>
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Race</th>
                 <th>Class</th>
+                <th>View</th>
             </tr>
         </thead>
         <tbody>
@@ -24,3 +25,7 @@
         </tbody>
     </table>
 <% end %>
+
+<br><%= link_to 'Main Menu', menu_path, :class => "btn btn-info" %><br>
+<br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
+
