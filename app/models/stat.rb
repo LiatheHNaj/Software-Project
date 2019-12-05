@@ -76,15 +76,15 @@ class Stat < ApplicationRecord
   
       def mod_calc(ability)
         mod=0
-        if ability==10|11
+        if ability==10 || ability==11
           mod=0
-        elsif ability==12|13
+        elsif ability==12 || ability==13
           mod=1
-        elsif ability==14|15
+        elsif ability==14 || ability==15
           mod=2
-        elsif ability==16|17
+        elsif ability==16 || ability==17
           mod=3
-        elsif ability==18|19
+        elsif ability==18 || ability==19
           mod=4
         elsif ability>=20
           mod=5

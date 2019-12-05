@@ -4,6 +4,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :class
       t.string :name
       t.string :race
+      t.string :personality_traits
       t.string :ideals
       t.string :bonds
       t.string :flaws

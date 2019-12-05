@@ -18,7 +18,8 @@
         <tr>
             <th>Class</th>
             <td><%= character.character_class %></td>
-        </tr><tr>
+        </tr>
+        <tr>
             <th>Level</th>
             <td><%= character.stat.level %></td>
         </tr>
@@ -98,7 +99,23 @@
             <th>Passive Perception</th>
             <td><%= character.stat.passive_perception %></td>
         </tr>
-
+        <tr>
+            <th>Personality Traits</th>
+            <td><%= character.personality_traits %></td>
+        </tr>
+        <tr>
+            <th>Ideals</th>
+            <td><%= character.Ideals %></td>
+        </tr>
+        <tr>
+            <th>Flaws</th>
+            <td><%= character.flaws %></td>
+        </tr>
+        <tr>
+            <th>Bonds</th>
+            <td><%= character.bonds %></td>
+        </tr>
 </table>
 
 <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
+
