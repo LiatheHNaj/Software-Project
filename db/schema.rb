@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
     t.string "ideals"
     t.string "bonds"
     t.string "flaws"
+    t.integer "age"
+    t.string "sex"
+    t.string "height"
+    t.string "hair_color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"

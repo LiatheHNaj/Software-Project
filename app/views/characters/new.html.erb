@@ -6,19 +6,47 @@
 <%= form_with model: character, url: characters_path, local: true, method: :post, scope: :character do |form| %>
   <% race_options= ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ] %>
   <% class_options= ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]%>
+  <% sex_options= ["Male", "Female" ] %>
+  <% hair_options= ["Red", "Blue", "Green", "Orange", "Black", "Blonde" ] %>
+
   <div>
     <%= form.label "race_type" %>
     <%# label_tag "race_type" %>
-    <%= form.select(:race, race_options) %>
+    <%= form.select(:race, race_options, prompt: 'Choose one...') %>
     <%# select_tag "race_type", options_for_select([ "Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ]), prompt: 'Choose one...' %>
   </div>
 
   <div>
     <%= form.label "class_options"%>
    <%# label_tag "class_type" %>
-    <%= form.select(:character_class, class_options) %>
+    <%= form.select(:character_class, class_options, prompt: 'Choose one...') %>
    <%# select_tag "class_type", options_for_select([ "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" ]), prompt: 'Choose one...' %>
   </div>
+
+  <div>
+    <%= form.label "name"%>
+    <%= form.text_field(:name) %>
+  <div>
+
+  <div>
+    <%= form.label "Age"%>
+    <%= form.text_field(:age) %>
+  <div>
+
+  <div>
+    <%= form.label "Sex"%>
+    <%= form.select(:sex, sex_options, prompt: 'Choose one...') %>
+  <div>
+
+  <div>
+    <%= form.label "Height"%>
+    <%= form.text_field(:height) %>
+  <div>
+
+  <div>
+    <%= form.label "Hair Color"%>
+    <%= form.select(:hair_color, hair_options, prompt: 'Choose one...') %>
+  <div>
 
   <div>
     <%= form.label "personality_traits"%>
