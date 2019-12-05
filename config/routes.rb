@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   get 'characters', to: 'characters#index', as: 'characters'
-  get 'characters/new', to: 'characters#new', as: 'characters/new'
-  post 'characters', to: 'characters#create', as: 'character/create'
+  get 'characters/new', to: 'characters#new', as: 'new_character'
+  post 'characters', to: 'characters#create'#, as: 'character/create'
   get 'characters/:id', to: 'characters#view', as: 'character'
-  get 'characters/:id/edit', to: 'characters#edit', as: 'character/edit'
-  patch 'characters/:id', to: 'characters#update', as: 'character/update'
+  get 'characters/:id/edit', to: 'characters#edit', as: 'edit_character'#, as: 'character/edit'
+  patch 'characters/:id', to: 'characters#update'#, as: 'character/update'
   put 'characters/:id', to: 'characters#update'
 
 
