@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
     t.string "ideals"
     t.string "bonds"
     t.string "flaws"
+    t.boolean "is_spellcaster"
+    t.string "spell"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"

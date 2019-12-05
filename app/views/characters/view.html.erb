@@ -26,6 +26,7 @@
             <th>Proficiency Bonus</th>
             <th>Initiative Bonus</th>
             <th>Passive Perception</th>
+            <th>Spell</th>
         </tr>
     </thead>
     <tbody>
@@ -52,5 +53,12 @@
         <td><%= character.stat.proficiency_bonus %></td>
         <td><%= character.stat.initiative_bonus %></td>
         <td><%= character.stat.passive_perception %></td>
+        <td><%= character.spell%></td>
+
     </tbody>
+
+
 </table>
+<div>
+  <%= link_to 'Edit Character', character_edit_path(character)%>
+</div>

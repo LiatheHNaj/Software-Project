@@ -14,6 +14,28 @@ class CharactersController < ApplicationController
     end
   end
 
+  def edit
+    character = Character.find(params[:id])
+    respond_to do |format|
+      format.html { render :edit, locals: { character: character } }
+    end
+  end
+
+  def update
+    character = Character.find(params[:id])
+    respond_to do |format|
+      format.html {
+        if character.update(params.require(:character).permit(:spell))
+          flash[:success] = 'Character updated successfully'
+        redirect_to characters_url
+        else
+          flash.now[:error] = 'Error: Character could not be updated'
+          render :edit, locals: {character: character}
+        end
+      }
+    end
+  end
+
   def view
     character = Character.find(params[:id])
     respond_to do |format|
