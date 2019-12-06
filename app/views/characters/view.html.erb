@@ -1,6 +1,8 @@
 <h1>Dungeons & Dragons Character</h1>
 
 <br><%= link_to 'Main Menu', menu_path, :class => "btn btn-info" %>
+<%= link_to 'Character Index', characters_path, :class => "btn btn-info" %>
+<%= link_to 'Edit Character', edit_character_path(character), :class => "btn btn-info" %>
 
 <div class="text-center">
 <br><%= image_tag(character.race + ".png", size: "300x300") %>
@@ -152,8 +154,14 @@
             <th>Alignment</th>
             <td><%= character.alignment %></td>
         </tr>
+        <tr>
+            <th>Spell</th>
+            <td><%= character.spell %></td>
+        </tr>
+        <tr>
+            <th>Item</th>
+            <td><%= character.items %></td>
+        </tr>
 </table>
-
-<br><%= link_to 'Edit Character', character_edit_path(character), :class => "btn btn-info" %>
 
 <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
