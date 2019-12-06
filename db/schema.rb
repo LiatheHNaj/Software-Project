@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
     t.string "language3"
     t.string "language4"
     t.string "alignment"
+    t.string "items"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"

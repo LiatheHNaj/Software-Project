@@ -25,9 +25,9 @@ class CharactersController < ApplicationController
     character = Character.find(params[:id])
     respond_to do |format|
       format.html {
-        if character.update(params.require(:character).permit(:spell))
+        if character.update(params.require(:character).permit(:spell, :items, :age, :height, :hair_color, :ideals, :flaws, :bonds, :alignment_options))
           flash[:success] = 'Character updated successfully'
-        redirect_to characters_url
+        redirect_to character_url
         else
           flash.now[:error] = 'Error: Character could not be updated'
           render :edit, locals: {character: character}
@@ -42,7 +42,7 @@ class CharactersController < ApplicationController
       format.html { render :view, locals: { character: character }}
     end
   end
-  
+
   def destroy
     character = Character.find(params[:id])
     character.destroy

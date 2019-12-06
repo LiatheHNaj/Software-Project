@@ -2,16 +2,56 @@
 
 
 <%= form_with model: character, url: character_path, method: :patch, local: true, scope: :character do |form| %>
-  <% spell_options= ["Absorb Elements", "Acid Arrow", "Acid Splash"]%>
+  <% spell_options= ["Absorb Elements", "Acid Arrow", "Acid Splash", "Aid", "Blight", "Catnap"]%>
+  <% hair_options= ["Red", "Blue", "Green", "Orange", "Black", "Blonde" ] %>
+  <% alignment_options= ["Lawful Good", "Neutral Good", "Chaotic Good", "Lawful Neutral", "Neutral", "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil"] %>
 
+  <div>
+    <%= form.label "Age"%>
+    <%= form.text_field(:age) %>
+  <div>
+
+  <div>
+    <%= form.label "Height"%>
+    <%= form.text_field(:height) %>
+  <div>
+
+  <div>
+    <%= form.label "Hair Color"%>
+    <%= form.select(:hair_color, hair_options, prompt: 'Choose one...') %>
+  <div>
+
+  <div>
+    <%= form.label "ideals"%>
+    <%= form.text_field(:ideals) %>
+  </div>
+
+  <div>
+    <%= form.label "flaws"%>
+    <%= form.text_field(:flaws) %>
+  </div>
+
+  <div>
+    <%= form.label "bonds"%>
+    <%= form.text_field(:bonds) %>
+  </div>
+
+  <div>
+    <%= form.label "alignment_options" %>
+    <%= form.select(:alignment, alignment_options, prompt: 'Choose one...') %>
+  </div>
 
   <div>
     <%= form.label "spells" %>
     <%= form.select(:spell, spell_options) %>
   </div>
+  <div>
+    <%= form.label "items"%>
+    <%= form.text_field(:items) %>
+  <div>
 
   <div>
-    <%= form.submit "Submit" %>
+    <%= form.submit "Submit" , :class => "btn btn-info"%>
   </div>
 
 <% end %>
