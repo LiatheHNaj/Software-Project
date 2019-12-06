@@ -6,6 +6,8 @@
 <%= form_with model: character, url: characters_path, local: true, method: :post, scope: :character do |form| %>
   <% race_options= ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ] %>
   <% class_options= ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]%>
+  <% language_options= ["Abyssal", "Aquan", "Auran", "Celestial", "Common", "Deep Speech", "Elvish"] %>
+  <% alignment_options= ["Lawful Good", "Neutral Good", "Chaotic Good", "Lawful Neutral", "Neutral", "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil"] %>
   <% sex_options= ["Male", "Female" ] %>
   <% hair_options= ["Red", "Blue", "Green", "Orange", "Black", "Blonde" ] %>
   
@@ -22,6 +24,26 @@
   <div>
     <%= form.label "class_options"%>
     <%= form.select(:character_class, class_options, prompt: 'Choose one...') %>
+  </div>
+
+  <div>
+    <%= form.label "language_options" %>
+    <%= form.select(:language1, language_options, prompt: 'Choose Language 1') %>
+  </div>
+
+  <div>
+    <%= form.label "language_options" %>
+    <%= form.select(:language2, language_options, prompt: 'Choose Language 2') %>
+  </div>
+
+  <div>
+    <%= form.label "language_options" %>
+    <%= form.select(:language3, language_options, prompt: 'Choose Language 3') %>
+  </div>
+
+  <div>
+    <%= form.label "language_options" %>
+    <%= form.select(:language4, language_options, prompt: 'Choose Language 4') %>
   </div>
 
   <div>
@@ -51,22 +73,27 @@
 
   <div>
     <%= form.label "personality_traits"%>
-    <%= form.text_field(:personality_traits) %>    
+    <%= form.text_field(:personality_traits) %>
   </div>
-  
+
   <div>
     <%= form.label "ideals"%>
-    <%= form.text_field(:ideals) %>    
+    <%= form.text_field(:ideals) %>
   </div>
 
   <div>
     <%= form.label "flaws"%>
-    <%= form.text_field(:flaws) %>    
-  </div>  
-  
+    <%= form.text_field(:flaws) %>
+  </div>
+
   <div>
     <%= form.label "bonds"%>
-    <%= form.text_field(:bonds) %>    
+    <%= form.text_field(:bonds) %>
+  </div>
+
+  <div>
+    <%= form.label "alignment_options" %>
+    <%= form.select(:alignment, alignment_options, prompt: 'Choose one...') %>
   </div>
 
   <div>

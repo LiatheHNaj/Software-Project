@@ -20,6 +20,22 @@
             <td><%= character.character_class %></td>
         </tr>
         <tr>
+            <th>First Language</th>
+            <td><%= character.language1%></td>
+        </tr>
+        <tr>
+            <th>Second Language</th>
+            <td><%= character.language2 %></td>
+        </tr>
+        <tr>
+            <th>Third Language</th>
+            <td><%= character.language3 %></td>
+        </tr>
+        <tr>
+            <th>Fourth Language</th>
+            <td><%= character.language4 %></td>
+        </tr>
+        <tr>
             <th>Age</th>
             <td><%= character.age %></td>
         </tr>
@@ -131,10 +147,13 @@
             <th>Bonds</th>
             <td><%= character.bonds %></td>
         </tr>
+
         <tr>
-            <th>Spell</th>
-            <td><%= character.spell %></td>
+            <th>Alignment</th>
+            <td><%= character.alignment %></td>
         </tr>
 </table>
+
+<br><%= link_to 'Edit Character', character_edit_path(character), :class => "btn btn-info" %>
 
 <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
