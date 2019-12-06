@@ -20,6 +20,17 @@ class CharactersController < ApplicationController
       format.html { render :view, locals: { character: character }}
     end
   end
+  
+  def destroy
+    character = Character.find(params[:id])
+    character.destroy
+    respond_to do |format|
+      format.html {
+        flash[:success] = 'Character removed successfully'
+        redirect_to characters_url
+      }
+    end
+  end
 
   def create
     character = Character.new(params.require(:character).permit(:race, :character_class, :name, :age, :sex, :height, :hair_color, :personality_traits, :ideals, :flaws, :bonds))  # new object from params
