@@ -10,6 +10,8 @@
 #  ideals             :string
 #  bonds              :string
 #  flaws              :string
+#  is_spellcaster     :boolean
+#  spell              :string
 #  age                :integer
 #  sex                :string
 #  height             :string
@@ -19,6 +21,7 @@
 #  language3          :string
 #  language4          :string
 #  alignment          :string
+#  items              :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #  user_id            :integer
