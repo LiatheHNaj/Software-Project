@@ -33,7 +33,7 @@
 #
 
 class Stat < ApplicationRecord
-    belongs_to :character, dependent: :destroy
+    belongs_to :character
     before_save :setUpStats
 
     def setUpStats
@@ -58,7 +58,7 @@ class Stat < ApplicationRecord
         self.initiative_bonus = self.dexterity_mod
         self.passive_perception = (10 + self.wisdom_mod)
       end
-    
+
       def stats_roll(sides, number)
         roll_array = []
         number.times do
@@ -73,7 +73,7 @@ class Stat < ApplicationRecord
         end
         total
       end
-  
+
       def mod_calc(ability)
         mod=0
         if ability==10 || ability==11
