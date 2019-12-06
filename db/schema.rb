@@ -27,6 +27,11 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
     t.string "sex"
     t.string "height"
     t.string "hair_color"
+    t.string "language1"
+    t.string "language2"
+    t.string "language3"
+    t.string "language4"
+    t.string "alignment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"

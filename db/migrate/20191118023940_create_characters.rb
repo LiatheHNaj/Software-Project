@@ -12,8 +12,13 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :sex
       t.string :height
       t.string :hair_color
+      t.string :language1
+      t.string :language2
+      t.string :language3
+      t.string :language4
+      t.string :alignment
 
-      
+
       t.timestamps
     end
   end
