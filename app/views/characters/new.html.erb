@@ -10,7 +10,12 @@
   <% alignment_options= ["Lawful Good", "Neutral Good", "Chaotic Good", "Lawful Neutral", "Neutral", "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil"] %>
   <% sex_options= ["Male", "Female" ] %>
   <% hair_options= ["Red", "Blue", "Green", "Orange", "Black", "Blonde" ] %>
-
+  
+  <div>
+    <%= form.label "race_type" %>
+    <%= form.select(:race, race_options) %>
+  </div>
+  
   <div>
     <%= form.label "race_type" %>
     <%= form.select(:race, race_options, prompt: 'Choose one...') %>

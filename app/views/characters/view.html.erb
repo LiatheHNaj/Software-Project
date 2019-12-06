@@ -154,4 +154,6 @@
         </tr>
 </table>
 
+<br><%= link_to 'Edit Character', character_edit_path(character), :class => "btn btn-info" %>
+
 <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>

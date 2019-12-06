@@ -8,6 +8,8 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :ideals
       t.string :bonds
       t.string :flaws
+      t.boolean :is_spellcaster
+      t.string :spell
       t.integer :age
       t.string :sex
       t.string :height
