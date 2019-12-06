@@ -1,8 +1,9 @@
-<h1>Create Your New DnD Charater</h1>
+<h1 class="text-center">Create Your New DnD Character</h1> <br>
 
 
 
 
+<div>
 <%= form_with model: character, url: characters_path, local: true, method: :post, scope: :character do |form| %>
   <% race_options= ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-Orc", "Half-Elf", "Drow", "Warforged" ] %>
   <% class_options= ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]%>
@@ -10,91 +11,93 @@
   <% alignment_options= ["Lawful Good", "Neutral Good", "Chaotic Good", "Lawful Neutral", "Neutral", "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil"] %>
   <% sex_options= ["Male", "Female" ] %>
   <% hair_options= ["Red", "Blue", "Green", "Orange", "Black", "Blonde" ] %>
-  
-  <div>
+    
+  <div class="text-center">
     <%= form.label "race_type" %>
     <%= form.select(:race, race_options, prompt: 'Choose one...') %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "class_options"%>
     <%= form.select(:character_class, class_options, prompt: 'Choose one...') %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "language_options" %>
     <%= form.select(:language1, language_options, prompt: 'Choose Language 1') %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "language_options" %>
     <%= form.select(:language2, language_options, prompt: 'Choose Language 2') %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "language_options" %>
     <%= form.select(:language3, language_options, prompt: 'Choose Language 3') %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "language_options" %>
     <%= form.select(:language4, language_options, prompt: 'Choose Language 4') %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "name"%>
     <%= form.text_field(:name) %>
   <div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "Age"%>
     <%= form.text_field(:age) %>
   <div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "Sex"%>
     <%= form.select(:sex, sex_options, prompt: 'Choose one...') %>
   <div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "Height"%>
     <%= form.text_field(:height) %>
   <div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "Hair Color"%>
     <%= form.select(:hair_color, hair_options, prompt: 'Choose one...') %>
   <div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "personality_traits"%>
     <%= form.text_field(:personality_traits) %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "ideals"%>
     <%= form.text_field(:ideals) %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "flaws"%>
     <%= form.text_field(:flaws) %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "bonds"%>
     <%= form.text_field(:bonds) %>
   </div>
 
-  <div>
+  <div class="text-center">
     <%= form.label "alignment_options" %>
     <%= form.select(:alignment, alignment_options, prompt: 'Choose one...') %>
   </div>
 
-  <div>
-    <%= form.submit "Submit" , :class => "btn btn-info"%>
+  <div class ="text-center">
+    <br><%= form.submit "Submit" , :class => "btn btn-info"%>
   </div>
 <% end %>
-
-<br><%= link_to 'Main Menu', menu_path, :class => "btn btn-info" %><br>
-<br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
+  <br><div class ="text-center">
+    <br><%= link_to 'Main Menu', menu_path, :class => "btn btn-info" %><br>
+    <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
+  </div>
+</div>
