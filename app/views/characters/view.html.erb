@@ -131,7 +131,10 @@
             <th>Bonds</th>
             <td><%= character.bonds %></td>
         </tr>
+        <tr>
+            <th>Spell</th>
+            <td><%= character.spell %></td>
+        </tr>
 </table>
 
 <br><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "btn btn-info" %>
-

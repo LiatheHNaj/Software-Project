@@ -31,6 +31,8 @@
 #  personality_traits :string
 #  bonds           :string
 #  flaws           :string
+#  is_spellcaster  :boolean
+#  spell           :string
 #  age             :integer
 #  sex             :string
 #  height          :string
@@ -48,6 +50,15 @@
 class Character < ApplicationRecord
     has_one :stat, dependent: :destroy 
     belongs_to :user
+    before_save :is_spellcaster
+
+    def is_spellcaster
+      temp_variable = false
+      if character_class == "Wizard"
+        temp_variable = true
+      end
+      temp_variable
+    end
 
 
     validates :name, :race, :character_class, :personality_traits, :ideals, :flaws, :bonds, presence: true

@@ -31,6 +31,8 @@
 #  personality_traits :string
 #  bonds           :string
 #  flaws           :string
+#  is_spellcaster  :boolean
+#  spell           :string
 #  age             :integer
 #  sex             :string
 #  height          :string

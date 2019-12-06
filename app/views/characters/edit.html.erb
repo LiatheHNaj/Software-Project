@@ -1,0 +1,17 @@
+<h1> Edit Your Character </h1>
+
+
+<%= form_with model: character, url: character_path, method: :patch, local: true, scope: :character do |form| %>
+  <% spell_options= ["Absorb Elements", "Acid Arrow", "Acid Splash"]%>
+
+
+  <div>
+    <%= form.label "spells" %>
+    <%= form.select(:spell, spell_options) %>
+  </div>
+
+  <div>
+    <%= form.submit "Submit" %>
+  </div>
+
+<% end %>

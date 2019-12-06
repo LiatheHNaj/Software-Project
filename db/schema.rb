@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2019_12_02_202139) do
     t.string "ideals"
     t.string "bonds"
     t.string "flaws"
+    t.boolean "is_spellcaster"
+    t.string "spell"
     t.integer "age"
     t.string "sex"
     t.string "height"
