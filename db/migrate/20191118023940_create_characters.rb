@@ -19,6 +19,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :language3
       t.string :language4
       t.string :alignment
+      t.string :items
 
 
       t.timestamps
