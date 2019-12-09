@@ -1,0 +1,8 @@
+- Project Coordinator: Adam Losher
+- Quality Assurance Czars: (We all reviewed each others code)
+  - Adam Losher
+  - Nick Pizarro
+  - Liathe Najdawi
+- Video Demo Creators:
+  - (Adam Losher, Number of Points; filled in at end of iteration)
+- Demo-Booth Operator: (Adam Losher; filled in at end of iteration)
