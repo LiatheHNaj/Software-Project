@@ -51,9 +51,8 @@ class Stat < ApplicationRecord
         self.wisdom_mod = mod_calc(self.wisdom)
         self.charisma_mod = mod_calc(self.charisma)
         self.armor_class = 15
-        self.hitpoints = 45
         self.speed = 30
-        self.hit_dice = "1d10"
+        self.hit_dice = ((self.level).to_s + "d10")
         self.proficiency_bonus = 2
         self.initiative_bonus = self.dexterity_mod
         self.passive_perception = (10 + self.wisdom_mod)
