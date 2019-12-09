@@ -10,7 +10,7 @@
 | ------------ | ----- |
 | Contributor  | Adam Losher |
 | Contribution | Created Documentation, Made bugs fixes, Finished character stats, added character creation options, set up dependancies of models, worked on the character controller |
-| Pull Request | https://github.com/memphis-cs-projects/SmellyMonkeys/pull/46 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/45 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/43 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/31 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/27 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/26 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/24 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/23 |
+| Pull Request | https://github.com/memphis-cs-projects/SmellyMonkeys/pull/48 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/46 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/45 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/43 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/31 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/27 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/26 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/24 , https://github.com/memphis-cs-projects/SmellyMonkeys/pull/23 |
 
 | Time Offset  | 00:04:20 - 00:10:30 |
 | ------------ | ----- |
