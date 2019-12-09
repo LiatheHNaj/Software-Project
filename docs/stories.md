@@ -10,7 +10,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to select a race for my character so it can have a specific skill set |
 | Estimate    | 5 days |
 | Priority    | 10 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 2 |
 | ----------- | ----- |
@@ -18,7 +18,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to select a class for my character so it can have a specific skill set |
 | Estimate    | 5 days |
 | Priority    | 10 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 3 |
 | ----------- | ----- |
@@ -26,7 +26,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to customize strength for my new character so I don’t have to calculate it by hand|
 | Estimate    | 5 days |
 | Priority    | 10 |
-| Status      | not started |
+| Status      | completed |
 
 
 | ID          | 4 |
@@ -35,7 +35,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to select the attributes I want my character to be proficient in, so I can reference it during a session. |
 | Estimate    | 2 days |
 | Priority    | 20 |
-| Status      | not started |
+| Status      | not implemented |
 
 ## Character Description
 
@@ -45,7 +45,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to give my character a name, sex, age, height, and hair color, so I can further personalize the character |
 | Estimate    | 2 days |
 | Priority    | 50 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 6 |
 | ----------- | ----- |
@@ -53,7 +53,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to give my character an alignment & known languages, so I can further personalize the character |
 | Estimate    | 2 days |
 | Priority    | 50 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 7 |
 | ----------- | ----- |
@@ -61,7 +61,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to give my character personality traits, ideals, bonds, & flaws so I can further personalize the character. |
 | Estimate    | 2 days |
 | Priority    | 50 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 8 |
 | ----------- | ----- |
@@ -69,7 +69,7 @@ Project: DnD Character Creation
 | Description | As a user I want to see a picture of my character so I can see the results from the customization done in creation |
 | Estimate    | 1.5 days |
 | Priority    | 20 |
-| Status      | not started |
+| Status      | completed |
 
 ## Leveling up
 
@@ -79,7 +79,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to select an existing character so I can continue the game with my previous creation. |
 | Estimate    | 2 days |
 | Priority    | 20 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 10 |
 | ----------- | ----- |
@@ -87,7 +87,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to have the app increase the stats of my choice for leveling up. |
 | Estimate    | 2 days |
 | Priority    | 30 |
-| Status      | not started |
+| Status      | not implemented |
 
 | ID          | 11 |
 | ----------- | ----- |
@@ -95,7 +95,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to select new feats to add to my character at level 1, 6, 10, & 14 So I can further enhance the character.  |
 | Estimate    | 2 days |
 | Priority    | 30 |
-| Status      | not started |
+| Status      | not implemented |
 
 | ID          | 12 |
 | ----------- | ----- |
@@ -103,7 +103,7 @@ Project: DnD Character Creation
 | Description | As a user, if my character is a spell caster, I want to be able to select new spells to add to my spell book.  |
 | Estimate    | 2 days |
 | Priority    | 30 |
-| Status      | not started |
+| Status      | completed |
 
 ## Items
 
@@ -113,7 +113,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to add a weapon or an item so I can let my character use it in game. |
 | Estimate    | 2 days |
 | Priority    | 30 |
-| Status      | not started |
+| Status      | completed |
 
 | ID          | 14 |
 | ----------- | ----- |
@@ -121,7 +121,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to equip a weapon, armor, or an item so I can let my character use it in game. |
 | Estimate    | 2 days |
 | Priority    | 35 |
-| Status      | not started |
+| Status      | not implemented |
 
 ## Spells
 
@@ -131,7 +131,7 @@ Project: DnD Character Creation
 | Description | As a user, I want to select a spell to add to my spellbook during level up, so my character can use them in game. |
 | Estimate    | 2 days |
 | Priority    | 35 |
-| Status      | not started |
+| Status      | not implemented |
 
 ## User
 
@@ -141,4 +141,4 @@ Project: DnD Character Creation
 | Description | As a user, I want to be able to login to have my own set of characters |
 | Estimate    | 3 days |
 | Priority    | 10 |
-| Status      | not started |
+| Status      | completed |
